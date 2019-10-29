@@ -30,6 +30,7 @@ app.post('/qrcode', (req, res, next) => {
     })
     // Send the link of generated QR code
     res.send({
+        'success': 'true',
         'qr_img': "qr/" + qr_code_file_name
     });
 });
