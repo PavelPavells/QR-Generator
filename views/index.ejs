@@ -12,25 +12,25 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"/>
     <link rel="stylesheet" href="/css/style.css">
-    <title>QR Code Generator</title>
+    <title>QR Генератор</title>
   </head>
   <body>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-6 align-self-center" style="margin-top: 13%;">
-          <h1 class="text-center text-light">Convert your text to QR code</h1>
+        <div class="col-md-6 align-self-center">
+          <h1 class="text-center text-dark">QR Код Конвертер</h1>
           <form>
             <div class="form-group">
               <label for="input_text"></label>
-              <input type="text" class="form-control form-control-lg	" id="input_text" placeholder="Enter Your Text Here">
+              <input type="text" class="form-control form-control-lg" id="input_text" placeholder="Введите что угодно" min="1" maxlength="60">
             </div>
-            <button type="button" id="gen" class="btn btn-primary btn-block">Generate QR Code</button>
+            <button type="button" id="gen" class="btn btn-primary btn-block">Сгенерировать QR Код</button>
           </form>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-md-6 align-self-center" style="margin-top: 20px;margin-bottom:5px;margin-left: 30%;">
-         <img src="" id="qr-code-img" class="img-responsive text-center d-none" alt="Image">
+        <div class="col-md-6 align-self-center wrapper-qr-code">
+         <img src="" id="qr-code-img" class="qr-code img-responsive text-center d-none" alt="Image">
         </div>
       </div>
     </div>

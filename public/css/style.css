@@ -2,3 +2,18 @@
     margin: 0;
     padding: 0;
 }
+.wrapper-qr-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
+.qr-code {
+    display: flex;
+    width: 151.75242px;
+    height: 151.75242px;
+}
+.align-self-center {
+    margin-top: 10%;
+}
